@@ -13,3 +13,5 @@ python文件切割小工具
 
 #### 切割
 ![image](./images/use.png)
+
+Ps: 可能存在兼容性问题，如果运行不了，需要重新用py2exe(windows)或者py2app(mac os) 打包
