@@ -272,7 +272,7 @@ def main():
     sa = httpd.socket.getsockname()
     add = get_host_ip()+':'+str(port)
     print "Serving HTTP on", sa[0], "port", sa[1], "..."
-    print add
+    print "wget https://raw.githubusercontent.com/chenlinzhong/file-split/master/upload.sh && sh upload.sh %s %s"%(add,os.getcwd())
     httpd.serve_forever()
 
 def get_host_ip():
