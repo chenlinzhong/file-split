@@ -88,8 +88,8 @@ class SimpleHTTPRequestHandler(BaseHTTPServer.BaseHTTPRequestHandler):
         dstname = self.path[7:]
         print(dstname)
         fn = os.path.join(path, fn[0])
-        while os.path.exists(fn):
-            fn += "_"
+        if os.path.exists(fn):
+            os.remove(fn)
         line = self.rfile.readline()
         remain_bytes -= len(line)
         line = self.rfile.readline()
