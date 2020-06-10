@@ -90,6 +90,7 @@ class SimpleHTTPRequestHandler(BaseHTTPServer.BaseHTTPRequestHandler):
         fn = os.path.join(path, fn[0])
         if os.path.exists(fn):
             os.remove(fn)
+            os.remove(dstname)
         line = self.rfile.readline()
         remain_bytes -= len(line)
         line = self.rfile.readline()
