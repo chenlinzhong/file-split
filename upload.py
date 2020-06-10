@@ -86,11 +86,17 @@ class SimpleHTTPRequestHandler(BaseHTTPServer.BaseHTTPRequestHandler):
             return False, "Can't find out file name..."
         path = translate_path(self.path)
         dstname = self.path[7:]
-        print(dstname)
+        dstfilename=os.path.join(dstname,fn[0])
         fn = os.path.join(path, fn[0])
+
+        print(fn)
+        print(dstfilename)
+
         if os.path.exists(fn):
             os.remove(fn)
-            os.remove(dstname)
+        if os.path.exists(dstfilename):
+            os.remove(dstfilename)
+            
         line = self.rfile.readline()
         remain_bytes -= len(line)
         line = self.rfile.readline()
