@@ -6,8 +6,7 @@ Usage:
 """
 dsfdsfdsf
 sdfds
-ddd
-from setuptools import setup
+sdfdsfsdfdsfrom setuptools import setup
 
 APP = ['main.py']
 DATA_FILES = []
