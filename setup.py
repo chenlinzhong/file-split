@@ -8,6 +8,7 @@ dsfdsfdsf
 sdfds
 999.100.10
 kk.kk.99
+ddd
 sdfdsfsdfdsfrom setuptools import setup
 
 APP = ['main.py']
