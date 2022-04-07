@@ -1,0 +1,11 @@
+issue #1929 this is a header
+
+1.The previous alignment of Doris is up to 8 bytes.
+
+2.For types with more than 8 bytes, such as Date, Datetime is not aligned.
+
+3.This PR is mainly to relax the maximum 8-byte limitation
+
+4.Also, because the data type Decimal v1 no longer exists,
+
+5.the logic of the 40-byte Decimal v1 is also discarded.
