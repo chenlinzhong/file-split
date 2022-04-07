@@ -6,6 +6,7 @@ Usage:
 """
 dsfdsfdsf
 sdfds
+999.100.10
 sdfdsfsdfdsfrom setuptools import setup
 
 APP = ['main.py']
