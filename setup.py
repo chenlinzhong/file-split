@@ -5,7 +5,7 @@ Usage:
     python setup.py py2app
 """
 dsfdsfdsf
-
+sdfds
 from setuptools import setup
 
 APP = ['main.py']
