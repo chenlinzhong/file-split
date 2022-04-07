@@ -9,8 +9,7 @@ sdfds
 999.100.10
 kk.kk.99
 ddd
-sdfdsfsdfdsfrom setuptools import setup
-
+iiii
 APP = ['main.py']
 DATA_FILES = []
 OPTIONS = {}
